@@ -68,20 +68,6 @@ export default class Laberinto extends React.Component{
                 	laberinto: laberinto2
             	})
         	}
-        	if(laberinto2[this.state.py][this.state.px+1] == "g"){
-        		
-            	laberinto2[this.state.py][this.state.px] = " "
-            	laberinto2[this.state.py][this.state.px+1] = "p"
-            	this.setState({
-                	px: this.state.px +1,
-                	laberinto: laberinto2,
-    
-            	})
-				document.getElementById('won').play();
-            	alert("You found the master sword");
-			
-            	
-        	} 
         }
         if (e.key === "ArrowUp") {
             const laberinto2 = this.state.laberinto
@@ -92,19 +78,6 @@ export default class Laberinto extends React.Component{
                 	py: this.state.py -1,
                 	laberinto: laberinto2
             	})
-        	}
-        	if(laberinto2[this.state.py][this.state.px+1] == "g"){
-        		
-            	laberinto2[this.state.py][this.state.px] = " "
-            	laberinto2[this.state.py][this.state.px+1] = "p"
-            	this.setState({
-                	px: this.state.px +1,
-                	laberinto: laberinto2,
-                	
-            	})
-				document.getElementById('won').play();
-            	alert("You found the master sword");
-		
         	} 
         }
         if (e.key === "ArrowDown") {
