@@ -50,8 +50,9 @@ export default class Laberinto extends React.Component{
                 	laberinto: laberinto2,
                 	
             	})
-				
-				document.getElementById('won').play();
+				//Si se quiere que suene la cancion de Zelda de cuando se abre un cofre quitar el comment. Se quito por ser mala practica que suene algo al poner ok
+				//en un alert
+				//document.getElementById('won').play();
             	alert("You found the master sword");
 				
             	
@@ -100,7 +101,9 @@ export default class Laberinto extends React.Component{
                 	laberinto: laberinto2,
                 	
             	})
-				document.getElementById('won').play();
+				//Si se quiere que suene la cancion de Zelda de cuando se abre un cofre quitar el comment. Se quito por ser mala practica que suene algo al poner ok
+				//en un alert
+				//document.getElementById('won').play();
             	alert("You found the master sword");
 			
             	
